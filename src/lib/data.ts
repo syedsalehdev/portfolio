@@ -40,7 +40,7 @@ export type Experience = {
 export const experience: Experience[] = [
   {
   org: "Virginia Tech Baseball",
-  role: "Student Data Analyst",
+  role: "Data Analyst",
   period: "Sep. 2026 — Present",
   current: true,
   points: [
