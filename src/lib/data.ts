@@ -39,16 +39,16 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    org: "Virginia Tech Baseball",
-    role: "Incoming Student Data Analyst",
-    period: "2026 — 2027",
-    current: true,
-    points: [
-      "Supporting TrackMan and in-game data collection and analysis",
-      "Contributing to player evaluation and pitching analysis",
-      "Building reports and visualizations using R and SQL",
-    ],
-  },
+  org: "Virginia Tech Baseball",
+  role: "Student Data Analyst",
+  period: "Sep. 2026 — Present",
+  current: true,
+  points: [
+    "Build SQL- and R-based models on TrackMan data for high school recruits, translating raw metrics into scouting reports that support the recruiting process.",
+    "Analyze TrackMan data for current players to identify performance weaknesses and inform tailored practice plans with coaching staff.",
+    "Prepare opponent scouting reports using SQL and R to support in-game decision-making and player evaluation.",
+  ],
+},
   {
     org: "South Asian Business Council of Virginia",
     role: "AI & Data Science Intern",
