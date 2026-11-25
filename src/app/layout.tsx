@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const inter = localFont({
@@ -47,6 +48,7 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} bg-bg text-text font-sans antialiased selection:bg-accent selection:text-[#06100f]`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
