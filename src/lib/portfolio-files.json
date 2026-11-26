@@ -1,0 +1,106 @@
+[
+  {
+    "path": ".gitignore",
+    "description": "Excludes build output, dependencies, environment files, and local tooling state."
+  },
+  {
+    "path": "AGENTS.md",
+    "description": "Repository-specific guidance for coding assistants working with this Next.js version."
+  },
+  {
+    "path": "CLAUDE.md",
+    "description": "Points assistant tooling to the shared repository instructions."
+  },
+  {
+    "path": "DEPLOYMENT.md",
+    "description": "Step-by-step replacement, preview, and Vercel deployment instructions."
+  },
+  {
+    "path": "README.md",
+    "description": "Project overview, local setup, keyboard controls, and content-editing instructions."
+  },
+  {
+    "path": "eslint.config.mjs",
+    "description": "ESLint configuration for Next.js and TypeScript."
+  },
+  {
+    "path": "next.config.ts",
+    "description": "Next.js configuration; retains the existing deployment defaults."
+  },
+  {
+    "path": "package-lock.json",
+    "description": "Locks dependency versions for reproducible npm installations."
+  },
+  {
+    "path": "package.json",
+    "description": "Package dependencies and development, build, start, and lint scripts."
+  },
+  {
+    "path": "postcss.config.mjs",
+    "description": "Connects Tailwind CSS to the PostCSS build pipeline."
+  },
+  {
+    "path": "public/city.svg",
+    "description": "Original deterministic vector cityscape with white architecture and red structures."
+  },
+  {
+    "path": "public/headshot.png",
+    "description": "Original portrait asset, retained for future use."
+  },
+  {
+    "path": "public/syedsalehresume.pdf",
+    "description": "The updated one-page resume displayed in the Resume section."
+  },
+  {
+    "path": "scripts/dev.mjs",
+    "description": "Starts Next.js development mode and normalizes preview host arguments."
+  },
+  {
+    "path": "src/app/fonts/Inter.ttf",
+    "description": "Locally hosted font for body text and controls."
+  },
+  {
+    "path": "src/app/fonts/JetBrainsMono.ttf",
+    "description": "Locally hosted monospace font for filenames and secondary labels."
+  },
+  {
+    "path": "src/app/fonts/SpaceGrotesk.ttf",
+    "description": "Locally hosted display font for headings and navigation."
+  },
+  {
+    "path": "src/app/globals.css",
+    "description": "Complete red-and-white visual system, responsive layouts, focus styles, and reduced-motion support."
+  },
+  {
+    "path": "src/app/icon.svg",
+    "description": "Red-and-white favicon for browser tabs."
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "description": "Root document, local fonts, metadata, and social preview text."
+  },
+  {
+    "path": "src/app/page.tsx",
+    "description": "Home route that renders the interactive portfolio."
+  },
+  {
+    "path": "src/components/Portfolio.tsx",
+    "description": "Menu navigation, section views, project file search, resume viewer, and skill help interactions."
+  },
+  {
+    "path": "src/lib/data.ts",
+    "description": "Editable profile, project summaries, current roles, prior experience, and self-assessed skills."
+  },
+  {
+    "path": "src/lib/portfolio-files.json",
+    "description": "Annotated file map for this portfolio, including this file itself."
+  },
+  {
+    "path": "src/lib/repositories.json",
+    "description": "Annotated file maps for StockAI, YouTube to MP3, and Airedale, reviewed against GitHub."
+  },
+  {
+    "path": "tsconfig.json",
+    "description": "TypeScript compiler options and the @/ source import alias."
+  }
+]

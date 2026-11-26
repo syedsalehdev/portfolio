@@ -1,0 +1,200 @@
+{
+  "youtube2mp3": [
+    {
+      "path": ".gitignore",
+      "description": "Excludes generated audio, local environments, and editor files from Git."
+    },
+    {
+      "path": "LICENSE",
+      "description": "MIT license describing permissions and attribution requirements."
+    },
+    {
+      "path": "README.md",
+      "description": "Installation, FFmpeg setup, and single-URL and batch usage instructions."
+    },
+    {
+      "path": "converter.py",
+      "description": "Command-line entry point. Validates URLs, checks FFmpeg, sanitizes filenames, selects bitrates, and converts individual or batch downloads."
+    },
+    {
+      "path": "links.example.txt",
+      "description": "Example input format for a batch of YouTube URLs."
+    },
+    {
+      "path": "output/.gitkeep",
+      "description": "Keeps the empty output directory in Git without committing downloaded audio."
+    },
+    {
+      "path": "requirements.txt",
+      "description": "Declares the yt-dlp dependency."
+    }
+  ],
+  "stockai": [
+    {
+      "path": ".env.example",
+      "description": "Example SEC client identity configuration; no API credentials are included."
+    },
+    {
+      "path": ".gitignore",
+      "description": "Excludes local environments, downloaded filings, and generated artifacts."
+    },
+    {
+      "path": "PROJECT_AUDIT.md",
+      "description": "Documents the original data-quality problems and decisions behind the repaired prototype."
+    },
+    {
+      "path": "README.md",
+      "description": "Setup, architecture, current limitations, and planned improvements."
+    },
+    {
+      "path": "app.py",
+      "description": "Streamlit dashboard with ticker selection, cached headline sentiment, and a live SEC 10-Q retrieval workflow."
+    },
+    {
+      "path": "data/sample_news.csv",
+      "description": "Cached demonstration headlines with tickers, source URLs, and sentiment labels. This is not a live news feed."
+    },
+    {
+      "path": "main.py",
+      "description": "Command-line interface for ticker sentiment summaries and optional SEC filing retrieval."
+    },
+    {
+      "path": "requirements.txt",
+      "description": "Python packages needed by the dashboard, SEC client, and tests."
+    },
+    {
+      "path": "sec_client.py",
+      "description": "Resolves tickers to CIKs, selects the latest 10-Q, builds its exact primary-document URL, and validates extracted text."
+    },
+    {
+      "path": "sentiment.py",
+      "description": "Loads and cleans labeled news, maps labels to scores, and aggregates an unweighted sentiment signal per ticker."
+    },
+    {
+      "path": "tests/test_sec_client.py",
+      "description": "Checks that the SEC User-Agent contains contact information."
+    },
+    {
+      "path": "tests/test_sentiment.py",
+      "description": "Checks headline counts, mean sentiment score, and the resulting label."
+    }
+  ],
+  "airedale-init2winit": [
+    {
+      "path": "01_cleaned_data/Airedale_cleaned_merged_3000_units.csv",
+      "description": "Merged unit-level data for 3,000 serial numbers, including configuration, failure, rework, testing, and cost fields."
+    },
+    {
+      "path": "01_cleaned_data/Airedale_cleaned_merged_3000_units.xlsx",
+      "description": "Excel companion to the merged analysis dataset."
+    },
+    {
+      "path": "02_original_canvas_files/Airedale_Competition_Handbook_v3.docx",
+      "description": "Competition scope, deliverables, rules, and judging guidance."
+    },
+    {
+      "path": "02_original_canvas_files/Airedale_Investment_Catalog_v2.docx",
+      "description": "Investment options, prices, rollout times, and assumed benefits used by the model."
+    },
+    {
+      "path": "02_original_canvas_files/Competition_Dataset1_Field_Service_Final.xlsx",
+      "description": "Supplied field-service events and failure descriptions."
+    },
+    {
+      "path": "02_original_canvas_files/Competition_Dataset2_Warranty_Final.xlsx",
+      "description": "Supplied warranty claims and associated costs."
+    },
+    {
+      "path": "02_original_canvas_files/Competition_Dataset3_Product_Config_Final.xlsx",
+      "description": "Unit configuration, including facility, supplier, controls revision, and shift."
+    },
+    {
+      "path": "02_original_canvas_files/Competition_Dataset4_Rework_Final.xlsx",
+      "description": "Manufacturing defects, repair actions, disposition, labor, and material costs."
+    },
+    {
+      "path": "02_original_canvas_files/Competition_Dataset5_EOLT_Final.xlsx",
+      "description": "End-of-line test records, stations, retests, and outcomes."
+    },
+    {
+      "path": "02_original_canvas_files/judging_criteria_info_for_competitors.pdf",
+      "description": "Technical, root-cause, business-impact, and presentation judging criteria."
+    },
+    {
+      "path": "03_charts/01_warranty_pareto.png",
+      "description": "Warranty cost by failure category, showing the financial concentration in leaks."
+    },
+    {
+      "path": "03_charts/02_leak_heatmap.png",
+      "description": "Leak patterns by facility and supplier within the supplied failed-unit sample."
+    },
+    {
+      "path": "03_charts/03_controls_revA.png",
+      "description": "Controls complaints grouped by controls revision."
+    },
+    {
+      "path": "03_charts/04_fan_night_shift.png",
+      "description": "Backward-fan field complaints grouped by shift and facility."
+    },
+    {
+      "path": "03_charts/05_eolt_detection.png",
+      "description": "Recorded failure-mode mix across test stations; not a direct measurement of detection sensitivity."
+    },
+    {
+      "path": "03_charts/06_investment_returns.png",
+      "description": "Comparison of modeled returns for individual investment options."
+    },
+    {
+      "path": "03_charts/07_payback.png",
+      "description": "Projected cumulative cash flow and payback under benefit assumptions."
+    },
+    {
+      "path": "03_charts/08_workflow.png",
+      "description": "Proposed operational workflow and corrective-action process."
+    },
+    {
+      "path": "03_charts/09_robustness.png",
+      "description": "Sensitivity of the portfolio results to changed assumptions."
+    },
+    {
+      "path": "04_analysis_code/analysis.py",
+      "description": "Checks aggregate consistency, runs categorical comparisons, models overlapping benefits, and enumerates affordable portfolios."
+    },
+    {
+      "path": "04_analysis_code/analysis_core.py",
+      "description": "Exposes the shared savings calculation for chart generation."
+    },
+    {
+      "path": "04_analysis_code/charts.py",
+      "description": "Generates the nine presentation figures with Matplotlib. The current script references a sensitivity.json file absent from this repository."
+    },
+    {
+      "path": "04_analysis_code/data.py",
+      "description": "Precomputed aggregate dictionaries and cost cells used by the analysis; does not merge the raw workbooks."
+    },
+    {
+      "path": "04_analysis_code/final_numbers.py",
+      "description": "Calculates costs, savings, ROI, payback, and sensitivity for the selected four-investment portfolio."
+    },
+    {
+      "path": "04_analysis_code/final_portfolio.json",
+      "description": "Saved financial projections and sensitivity outputs for the selected $675K portfolio."
+    },
+    {
+      "path": "04_analysis_code/results.json",
+      "description": "Saved aggregate statistics and investment-analysis outputs."
+    },
+    {
+      "path": "04_analysis_code/robust.py",
+      "description": "Models monthly savings over three years, including reduced benefits and rollout ramps."
+    },
+    {
+      "path": "04_analysis_code/robust2.py",
+      "description": "Compares portfolios across six scenarios and ranks them by worst-case and mean regret."
+    },
+    {
+      "path": "README.md",
+      "description": "Project summary and selected investment portfolio. The file browser here uses the actual numbered repository folders."
+    }
+  ]
+}
