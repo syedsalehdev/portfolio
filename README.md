@@ -1,66 +1,48 @@
-# Syed Saleh — Developer Portfolio
+# Syed Saleh — Portfolio
 
-A modern, dark-themed developer portfolio built with Next.js (App Router), Tailwind CSS, and Framer Motion.
+A red-and-white, architectural portfolio inspired by game-menu navigation. Built with Next.js 16, React 19, TypeScript, and CSS, with an original SVG city backdrop and locally hosted fonts.
 
-## Stack
+## Explore
 
-- **Next.js 16** (App Router, TypeScript)
-- **Tailwind CSS v4**
-- **Framer Motion** for scroll/hover animations
-- Self-hosted variable fonts: Inter (body), Space Grotesk (display), JetBrains Mono (labels/mono accents)
-- Custom inline SVG icons for GitHub/LinkedIn
+- **About:** overview, both current roles, prior experience, and education.
+- **Projects:** this portfolio, YouTube to MP3, StockAI, and the Airedale challenge. Each project has a searchable, annotated map of every tracked repository file.
+- **Awards:** second place in the November 2026 Airedale Applied Intelligence Challenge.
+- **Resume:** embedded PDF with open and download links.
+- **Skills:** self-assessed proficiency bars. Flame markers identify C/C++ and LLVM as actively improving.
+- **Contact:** email, GitHub, LinkedIn, portfolio, and resume.
 
-## Project structure
+Use the menu or Previous/Next section buttons. Up/Down keys navigate sections outside text inputs and links; Home/End select the first/last section. Escape returns from a project detail view. Native scrolling reads the current section. Browser Back/Forward and deep links such as `/#projects/stockai` are supported.
 
-```
-src/
-  app/
-    layout.tsx          Root layout, fonts, metadata
-    page.tsx             Assembles all sections in order
-    globals.css          Design tokens (colors, fonts) + base styles
-    fonts/                Self-hosted .ttf variable font files
-  components/
-    layout/
-      Navbar.tsx          Sticky nav with scroll-spy active section highlight
-      ScrollProgress.tsx  Top progress bar tied to scroll position
-    sections/
-      Hero.tsx
-      About.tsx
-      Experience.tsx
-      Projects.tsx
-      Education.tsx
-      Contact.tsx
-    ui/
-      SectionHeading.tsx  Shared eyebrow + heading + description block
-      Tag.tsx             Small mono pill for tech stack / coursework
-      SignalLine.tsx      Animated waveform SVG (hero signature element)
-      icons.tsx           Custom GitHub / LinkedIn icons
-  lib/
-    data.ts               All content (profile, experience, projects, education) —
-                           edit this file to update copy without touching components
-    hooks/
-      useActiveSection.ts IntersectionObserver hook powering the nav highlight
-```
+## Develop
 
-## Run locally
+Use Node.js 20.9 or newer and npm.
 
-```bash
-npm install
+```sh
+npm ci
 npm run dev
 ```
 
-Then open http://localhost:3000
+Open the local URL printed by Next.js. `scripts/dev.mjs` passes development arguments through to Next.js and normalizes preview tools' host flags.
 
-## Build for production
-
-```bash
+```sh
 npm run build
 npm start
 ```
 
-## Customizing
+## Content editing
 
-- **Content**: everything text-based (name, roles, experience bullets, project descriptions, coursework) lives in `src/lib/data.ts`.
-- **Headshot**: the hero currently shows initials in a placeholder circle. Drop a real photo at `public/headshot.jpg` and swap the placeholder `<div>` in `src/components/sections/Hero.tsx` for an `<Image src="/headshot.jpg" ... />`.
-- **Colors**: edit the CSS variables at the top of `src/app/globals.css` (`--bg`, `--accent`, etc).
-- **Fonts**: swapped from `next/font/google` to `next/font/local` because this sandbox couldn't reach Google Fonts directly — the same `.ttf` files Google Fonts serves are self-hosted in `src/app/fonts/`. If you have normal network access, you can switch back to `next/font/google` in `layout.tsx` if you prefer, or keep the local copies (no external requests, slightly better privacy/perf).
+- `src/lib/data.ts`: profile, projects, roles, experience, and skill values.
+- `src/lib/repositories.json`: reviewed file descriptions for the three external projects.
+- `src/lib/portfolio-files.json`: file descriptions for this website.
+- `src/components/Portfolio.tsx`: interface and interactions.
+- `src/app/globals.css`: design, responsive layout, and accessibility styles.
+- `public/syedsalehresume.pdf`: downloadable resume.
+- `public/city.svg`: original geometric city artwork.
+
+The repository maps are curated snapshots reviewed on November 25, 2026. Update them when repository files change. GitHub links open the current `main` branch, and no GitHub token is required.
+
+StockAI describes the currently published Streamlit prototype, not the earlier unvalidated trading-model concept. Airedale attributes the original analysis to the team and labels modeled financial outcomes appropriately. Baseball processing speed is a development target; LLVM experiments are underway.
+
+## Deployment
+
+See `DEPLOYMENT.md` for replacing the old site, previewing on a Git branch, and publishing through the existing Vercel project. No backend, secrets, database, or environment variables are needed for this portfolio.
